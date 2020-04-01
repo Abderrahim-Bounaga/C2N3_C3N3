@@ -25,14 +25,11 @@ body {
         .header .header__menu ul li a {
           padding: 8px; }
         .header .header__menu ul li .arabic {
-          padding: 5px 30px;
+          padding: 5px 15px;
           border: 1.5px solid black;
-          border-radius: 5px;
-          background-image: url(../SVG/globe-solid.svg);
-          background-repeat: no-repeat;
-          background-position: right; }
-          .header .header__menu ul li .arabic img {
-            width: 20px; }
+          border-radius: 5px; }
+          .header .header__menu ul li .arabic i {
+            color: gold; }
   .header .header__info {
     margin-top: -30px;
     text-align: center;
