@@ -1,3 +1,5 @@
-body{
-    background-color: green($color: #000000);
-}
+@import 'main.scss';
+@import 'header.scss';
+@import 'symptons.scss';
+@import 'recommand.scss';
+@import 'footer.scss';
