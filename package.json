@@ -1,0 +1,23 @@
+{
+  "name": "c2n3_c3n3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compil": "node-sass ./scss ./css",
+    "watch": "node-sass -w ./scss -o ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abderrahim-Bounaga/C2N3_C3N3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abderrahim-Bounaga/C2N3_C3N3/issues"
+  },
+  "homepage": "https://github.com/Abderrahim-Bounaga/C2N3_C3N3#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
