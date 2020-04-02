@@ -22,7 +22,7 @@ body {
       display: flex;
       margin-right: 30px; }
       .header .header__menu ul li {
-        padding: 15px; }
+        padding: 5px; }
         .header .header__menu ul li a.active {
           color: #1078AD; }
         .header .header__menu ul li a {
