@@ -1,6 +1,7 @@
 *{
     text-decoration: none;
     list-style-type: none;
+    font-family: 'cairo', sans-serif !important;
 }
 body{
     margin: 0;
@@ -23,10 +24,17 @@ body{
             margin-right: 30px;
             li{
                 padding: 15px;
+                a.active
+                    {
+                        color: #1078AD;
+                    }
                 a{
                     padding: 8px;
                     font-size: 22px;
                     color: black;
+                    &:focus {
+                        color: #1078AD;
+                    }
                 }
                 .arabic{
                     padding: 5px 15px;

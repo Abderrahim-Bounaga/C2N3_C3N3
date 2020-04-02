@@ -1,6 +1,7 @@
 * {
   text-decoration: none;
-  list-style-type: none; }
+  list-style-type: none;
+  font-family: 'cairo', sans-serif !important; }
 
 body {
   margin: 0;
@@ -22,10 +23,14 @@ body {
       margin-right: 30px; }
       .header .header__menu ul li {
         padding: 15px; }
+        .header .header__menu ul li a.active {
+          color: #1078AD; }
         .header .header__menu ul li a {
           padding: 8px;
           font-size: 22px;
           color: black; }
+          .header .header__menu ul li a:focus {
+            color: #1078AD; }
         .header .header__menu ul li .arabic {
           padding: 5px 15px;
           border: 1.5px solid rgba(0, 0, 0, 0.4);
@@ -112,7 +117,7 @@ body {
         color: black;
         font-size: 30px; }
       .recommand .recommand__info .recommand__malade p {
-        font-size: 30px;
+        font-size: 26px;
         color: white;
         text-align: left; }
     .recommand .recommand__info .recommand__appel {
@@ -165,6 +170,8 @@ body {
       width: 20%; }
       .footer__info .footer__menu ul li {
         padding: 15px; }
+        .footer__info .footer__menu ul li a.active {
+          color: #1078AD; }
         .footer__info .footer__menu ul li a {
           padding: 8px;
           font-size: 22px;

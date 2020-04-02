@@ -12,6 +12,10 @@
             ul{
                 li{
                     padding: 15px;
+                    a.active
+                    {
+                        color: #1078AD;
+                    }
                     a{
                         padding: 8px;
                         font-size: 22px;
