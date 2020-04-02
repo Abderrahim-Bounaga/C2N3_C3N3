@@ -25,10 +25,12 @@ body{
                 padding: 15px;
                 a{
                     padding: 8px;
+                    font-size: 22px;
+                    color: black;
                 }
                 .arabic{
                     padding: 5px 15px;
-                    border: 1.5px solid black;
+                    border: 1.5px solid rgba($color: #000000, $alpha: .4);
                     border-radius: 5px;
                     i{
                         color: gold;
