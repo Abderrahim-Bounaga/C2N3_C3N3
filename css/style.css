@@ -97,6 +97,9 @@ body {
         margin: 0 auto;
         font-size: 23px; }
 
+.symp {
+  width: 80%; }
+
 .recommand {
   text-align: center;
   width: 100%;
