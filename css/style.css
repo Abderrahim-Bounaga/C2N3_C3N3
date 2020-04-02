@@ -164,6 +164,28 @@ body {
       border: .5px solid black;
       background: #1078AD;
       padding: 6px 150px; }
+  .recommand__information {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #96C5DC;
+    padding: 20px 0; }
+    .recommand__information--info {
+      width: 20%; }
+      .recommand__information--info h1 {
+        color: #1078AD; }
+      .recommand__information--info p {
+        color: #1A519E; }
+    .recommand__information a {
+      width: 20%;
+      margin-top: 7%;
+      color: white;
+      font-size: 20px;
+      border: .5px solid black;
+      border-radius: 5px;
+      background: #1078AD;
+      height: 40px;
+      padding: 1px 10px 3PX 10px; }
 
 .footer {
   text-align: center;

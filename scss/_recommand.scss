@@ -72,4 +72,32 @@
             padding: 6px 150px;
         }
     }
+    &__information{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        background: #96C5DC;
+        padding: 20px 0;
+        &--info{
+            width: 20%;
+            h1{
+                color: #1078AD;
+            }
+            p{
+                color: #1A519E;
+            }
+        }
+        a{
+            width: 20%;
+            margin-top: 7%;
+            color: white;
+            font-size: 20px;
+            border: .5px solid black;
+            border-radius: 5px;
+            background: #1078AD;
+            height: 40px;
+            padding: 1px 10px 3PX 10px;
+        }
+    }
 }
+ 
