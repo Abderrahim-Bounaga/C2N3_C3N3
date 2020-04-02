@@ -88,3 +88,7 @@ body {
         width: 60%;
         margin: 0 auto;
         font-size: 23px; }
+
+.recommand {
+  text-align: center;
+  width: 100%; }
