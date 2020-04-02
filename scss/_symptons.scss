@@ -1,0 +1,30 @@
+.symptons{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    h1{
+        color:#1078AD;
+        font-size: 32px;
+    }
+    &__info{
+        width: 50%;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        .symptons__icon{
+            margin-top: 10%;
+            width: 100%;
+            line-height: 30px;
+            font-size: 14px;
+            .symptons__img{
+                h4{
+                    padding-top: 25px;
+                    width: 60%;
+                    margin: 0 auto;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
