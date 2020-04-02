@@ -96,6 +96,10 @@ body {
         width: 60%;
         margin: 0 auto;
         font-size: 23px; }
+      .symptons__info .symptons__icon .symptons__img .font {
+        font-size: 16px; }
+      .symptons__info .symptons__icon .symptons__img .house {
+        width: 100%; }
 
 .symp {
   width: 80%; }
