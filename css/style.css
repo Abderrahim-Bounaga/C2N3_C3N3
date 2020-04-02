@@ -91,4 +91,61 @@ body {
 
 .recommand {
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  background: #1078AD; }
+  .recommand h1 {
+    padding-top: 30px;
+    font-size: 31px;
+    color: #D0E5F0; }
+  .recommand .recommand__info {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .recommand .recommand__info .recommand__malade {
+      width: 60%;
+      text-align: left; }
+      .recommand .recommand__info .recommand__malade h5 {
+        text-align: left;
+        color: black;
+        font-size: 30px; }
+      .recommand .recommand__info .recommand__malade p {
+        font-size: 30px;
+        color: white;
+        text-align: left; }
+    .recommand .recommand__info .recommand__appel {
+      width: 40%;
+      margin: auto; }
+      .recommand .recommand__info .recommand__appel h5 {
+        color: #F4CF1B;
+        font-size: 30px; }
+      .recommand .recommand__info .recommand__appel p {
+        width: 60%;
+        font-size: 30px;
+        border: 1px solid #F4CF1B;
+        margin: 0 auto;
+        padding: 10px 0px;
+        border-radius: 5px;
+        background: #F4CF1B;
+        color: #1078AD; }
+      .recommand .recommand__info .recommand__appel a {
+        color: white;
+        font-size: 25px;
+        padding: 25px 0 0 0;
+        border-bottom: 1px solid #F4CF1B; }
+  .recommand .recommand__test {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #96C5DC; }
+    .recommand .recommand__test h1 {
+      color: #1078AD; }
+    .recommand .recommand__test img {
+      padding-bottom: 30px; }
+    .recommand .recommand__test a {
+      width: 100%;
+      color: white;
+      font-size: 32px;
+      border: .5px solid black;
+      background: #1078AD;
+      padding: 6px 150px; }

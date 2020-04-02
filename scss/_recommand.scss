@@ -1,7 +1,75 @@
 .recommand{
     text-align: center;
     width: 100%;
+    background: #1078AD;
+    h1{
+        padding-top: 30px;
+        font-size: 31px;
+        color: #D0E5F0;
+    }
     .recommand__info{
-
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        .recommand__malade{
+            width: 60%;
+            text-align: left;
+            
+            h5{
+                text-align: left;
+                color: black;
+                font-size: 30px;
+            }
+            p{
+                font-size: 30px;
+                color: white;
+                text-align: left;
+            }
+        }
+        .recommand__appel{
+            width: 40%;
+            margin: auto;
+            h5{
+                color: #F4CF1B;
+                font-size: 30px;
+            }
+            p{
+                width: 60%;
+                font-size: 30px;
+                border: 1px solid #F4CF1B;
+                margin: 0 auto;
+                padding: 10px 0px;
+                border-radius: 5px;
+                background: #F4CF1B;
+                color: #1078AD;
+            }
+            a{
+                color: white;
+                font-size: 25px;
+                padding: 25px 0 0 0;
+                border-bottom: 1px solid #F4CF1B;
+            }
+        }
+    }
+    .recommand__test{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        background: #96C5DC;
+        h1{
+            color: #1078AD;
+        }
+        img{
+            padding-bottom: 30px;
+        }
+        a{
+            width: 100%;
+            color: white;
+            font-size: 32px;
+            border: .5px solid black;
+            background: #1078AD;
+            padding: 6px 150px;
+        }
     }
 }
