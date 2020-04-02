@@ -1,7 +1,7 @@
 * {
   text-decoration: none;
   list-style-type: none;
-  font-family: 'cairo', sans-serif !important; }
+  font-family: 'cairo', sans-serif; }
 
 body {
   margin: 0;
@@ -32,11 +32,12 @@ body {
           .header .header__menu ul li a:focus {
             color: #1078AD; }
         .header .header__menu ul li .arabic {
-          padding: 5px 15px;
+          padding: 0px 15px;
           border: 1.5px solid rgba(0, 0, 0, 0.4);
           border-radius: 5px; }
           .header .header__menu ul li .arabic i {
-            color: gold; }
+            color: gold;
+            font-size: 20px; }
   .header .header__info {
     margin-top: -30px;
     text-align: center;
@@ -177,11 +178,12 @@ body {
           font-size: 22px;
           color: black; }
         .footer__info .footer__menu ul li .arabic {
-          padding: 5px 15px;
+          padding: 0px 15px;
           border: 1.5px solid rgba(0, 0, 0, 0.4);
           border-radius: 5px; }
           .footer__info .footer__menu ul li .arabic i {
-            color: gold; }
+            color: gold;
+            font-size: 20px; }
     .footer__info .footer__contact {
       width: 25%; }
       .footer__info .footer__contact h3 {
