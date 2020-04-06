@@ -7,3 +7,12 @@ $sizeFont: 30px;
     display: flex;
     justify-content: space-between;
 }
+@mixin button {
+    padding: 0px 15px;
+    border: 1.5px solid rgba($color: $blackColor, $alpha: .4);
+    border-radius: 5px;
+    i{
+        color: $goldColor;
+        font-size: 20px;
+    }
+}
