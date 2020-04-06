@@ -6,11 +6,22 @@
         width: 95%;
         @include flexBox;
         margin: 0 auto;
+        @media (max-width:700px) {
+            flex-wrap:wrap;
+        }
+
         .footer__menu{
             width: 20%;
+            @media (max-width:700px) {
+                width:  40%; 
+            }
             ul{
+                @media (max-width:700px) {
+                    width: 100%;
+                    margin: auto;
+                }
                 li{
-                    padding: 15px;
+                    padding: 15px ;
                     a.active
                     {
                         color: $firstColor;
@@ -19,6 +30,12 @@
                         padding: 8px;
                         font-size: 22px;
                         color: $blackColor;
+                        @media (max-width:700px) {
+                            font-size: 18px;
+                        }
+                        @media (max-width:375px) {
+                            font-size: 14px;
+                        }
                     }
                     .arabic{
                       @include button;
@@ -28,21 +45,43 @@
         }
         .footer__contact{
             width: 25%;
+            @media (max-width:700px) {
+                width: 40%;
+            }
             h3{
                 color: $firstColor;
+                @media (max-width:375px) {
+                    font-size: 14px;
+                }
+            }
+            p{
+                @media (max-width:375px) {
+                    font-size: 10px;
+                }
             }
             &--num{
                 color: #369D53;
                 font-size: 24px;
+                @media (max-width:700px) {
+                    font-size: 14px;
+                }
             }
         }
         .footer__text{
             width:45%;
             text-align: left;
             padding-top: 7%;
+            @media (max-width:700px) {
+                width: 80%;
+                margin: auto;
+            }
             p{
             color: #7F7F7F;
+            @media (max-width:375px) {
+                font-size: 14px;
             }
+            }
+
         }
     }
     &__copy{

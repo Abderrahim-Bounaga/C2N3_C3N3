@@ -6,32 +6,68 @@
         padding-top: 30px;
         font-size: 31px;
         color: #D0E5F0;
+        @media (max-width:375px) {
+            font-size: 16px;
+        }
     }
     .recommand__info{
         width: 95%;
         @include flexBox;
         margin: 0 auto;
+        @media (max-width:700px) {
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
         .recommand__malade{
             width: 60%;
             text-align: left;
+            @media (max-width:700px) {
+                width: 90%;
+                margin: auto;
+            }
             
             h5{
                 text-align: left;
                 color: $blackColor;
                 font-size: 30px;
+                @media (max-width:700px) {
+                    width: 100%;
+                    text-align: center;
+                    margin: auto;
+                    color: $whiteColor;
+                }
+                @media (max-width:375px) {
+                    font-size: 14px;
+                }
             }
             p{
                 font-size: 26px;
                 color: $whiteColor;
                 text-align: left;
+                @media (max-width:700px) {
+                    width: 100%;
+                    font-size: 20px;
+                    text-align: center;
+                    margin: auto;
+                }
+                @media (max-width:375px) {
+                    font-size: 10px;
+                }
             }
         }
         .recommand__appel{
             width: 40%;
             margin: auto;
+            @media (max-width:700px) {
+                width: 100%;
+                text-align: center;
+            }
             h5{
                 color: $goldColor;
                 font-size: 30px;
+                @media (max-width:375px) {
+                    font-size: 16px;
+                }
             }
             p{
                 width: 60%;
@@ -42,12 +78,24 @@
                 border-radius: 5px;
                 background: $goldColor;
                 color: $firstColor;
+                @media (max-width:700px) {
+                    padding: 10px 0 0 0;
+                }
+                @media (max-width:375px) {
+                    font-size: 14px;
+                }
             }
             a{
                 color: $whiteColor;
                 font-size: 25px;
                 padding: 25px 0 0 0;
                 border-bottom: 1px solid $goldColor;
+                @media (max-width:700px) {
+                    padding: 5px 0 0px 0;
+                }
+                @media (max-width:375px) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -58,6 +106,9 @@
         background: #96C5DC;
         h1{
             color: $firstColor;
+            @media (max-width:375px) {
+                font-size: 16px;
+            }
         }
         img{
             padding-bottom: 30px;
@@ -69,6 +120,14 @@
             border: .5px solid $blackColor;
             background: $firstColor;
             padding: 6px 150px;
+            @media (max-width:700px) {
+                width: 50%;
+                margin: auto;
+                padding: 6px 50px;
+            }
+            @media (max-width:375px) {
+                font-size: 14px;
+            }
         }
     }
     &__information{

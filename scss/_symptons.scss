@@ -6,12 +6,18 @@
     h1{
         color:$firstColor;
         font-size: 32px;
+        @media (max-width:375px) {
+            font-size: 14px;
+        }
     }
     &__info{
         width: 50%;
         margin:0 auto;
         display: flex;
         justify-content: space-between;
+        @media (max-width:700px) {
+            width: 80%;
+        }
         .symptons__icon{
             margin-top: 10%;
             width: 100%;
@@ -23,6 +29,9 @@
                     width: 60%;
                     margin: 0 auto;
                     font-size: 23px;
+                    @media (max-width:375px) {
+                        font-size: 12px;
+                    }
                 }
                 .font{
                     font-size: 16px;

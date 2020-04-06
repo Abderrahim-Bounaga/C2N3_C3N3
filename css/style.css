@@ -18,9 +18,18 @@ body {
       margin-top: 5px;
       margin-left: 15px;
       height: 60px; }
+      @media (max-width: 700px) {
+        .header .header__menu img {
+          height: 55px; } }
+      @media (max-width: 375px) {
+        .header .header__menu img {
+          height: 50px; } }
     .header .header__menu ul {
       display: flex;
       margin-right: 30px; }
+      @media (max-width: 700px) {
+        .header .header__menu ul {
+          margin-right: 15px; } }
       .header .header__menu ul li {
         padding: 5px; }
         .header .header__menu ul li a.active {
@@ -29,6 +38,9 @@ body {
           padding: 8px;
           font-size: 22px;
           color: black; }
+          @media (max-width: 700px) {
+            .header .header__menu ul li a {
+              font-size: 14px; } }
           .header .header__menu ul li a:focus {
             color: #1078AD; }
         .header .header__menu ul li .arabic {
@@ -44,18 +56,39 @@ body {
     background: #F4CF1B; }
     .header .header__info h3 {
       padding-top: 20px; }
+      @media (max-width: 375px) {
+        .header .header__info h3 {
+          font-size: 14px; } }
     .header .header__info p {
       color: #1078AD;
       line-height: 30px; }
+      @media (max-width: 375px) {
+        .header .header__info p {
+          font-size: 10px; } }
   .header .header__text {
     width: 100%;
     display: flex; }
+    @media (max-width: 700px) {
+      .header .header__text {
+        flex-direction: column;
+        text-align: center; } }
     .header .header__text img {
       width: 50%; }
+      @media (max-width: 700px) {
+        .header .header__text img {
+          width: 80%;
+          margin: auto; } }
     .header .header__text .header__test {
       width: 50%;
       text-align: center;
       padding: 20px 0; }
+      @media (max-width: 700px) {
+        .header .header__text .header__test {
+          width: 80%;
+          margin: auto; } }
+      @media (max-width: 375px) {
+        .header .header__text .header__test h1 {
+          font-size: 14px; } }
       .header .header__text .header__test img {
         width: 10%; }
       .header .header__text .header__test p {
@@ -65,6 +98,9 @@ body {
         line-height: 45px;
         color: #7F7F7F;
         padding-bottom: 20px; }
+        @media (max-width: 375px) {
+          .header .header__text .header__test p {
+            font-size: 10px; } }
       .header .header__text .header__test a {
         width: 100%;
         color: white;
@@ -72,6 +108,14 @@ body {
         border: 0.5px solid black;
         background: #1078AD;
         padding: 6px 150px; }
+        @media (max-width: 700px) {
+          .header .header__text .header__test a {
+            width: 50%;
+            margin: auto;
+            padding: 6px 50px; } }
+        @media (max-width: 375px) {
+          .header .header__text .header__test a {
+            font-size: 14px; } }
 
 .symptons {
   width: 100%;
@@ -81,11 +125,17 @@ body {
   .symptons h1 {
     color: #1078AD;
     font-size: 32px; }
+    @media (max-width: 375px) {
+      .symptons h1 {
+        font-size: 14px; } }
   .symptons__info {
     width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 700px) {
+      .symptons__info {
+        width: 80%; } }
     .symptons__info .symptons__icon {
       margin-top: 10%;
       width: 100%;
@@ -96,6 +146,9 @@ body {
         width: 60%;
         margin: 0 auto;
         font-size: 23px; }
+        @media (max-width: 375px) {
+          .symptons__info .symptons__icon .symptons__img h4 {
+            font-size: 12px; } }
       .symptons__info .symptons__icon .symptons__img .font {
         font-size: 16px; }
       .symptons__info .symptons__icon .symptons__img .house {
@@ -112,28 +165,64 @@ body {
     padding-top: 30px;
     font-size: 31px;
     color: #D0E5F0; }
+    @media (max-width: 375px) {
+      .recommand h1 {
+        font-size: 16px; } }
   .recommand .recommand__info {
     width: 95%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto; }
+    @media (max-width: 700px) {
+      .recommand .recommand__info {
+        flex-direction: column;
+        padding-bottom: 10px; } }
     .recommand .recommand__info .recommand__malade {
       width: 60%;
       text-align: left; }
+      @media (max-width: 700px) {
+        .recommand .recommand__info .recommand__malade {
+          width: 90%;
+          margin: auto; } }
       .recommand .recommand__info .recommand__malade h5 {
         text-align: left;
         color: black;
         font-size: 30px; }
+        @media (max-width: 700px) {
+          .recommand .recommand__info .recommand__malade h5 {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            color: white; } }
+        @media (max-width: 375px) {
+          .recommand .recommand__info .recommand__malade h5 {
+            font-size: 14px; } }
       .recommand .recommand__info .recommand__malade p {
         font-size: 26px;
         color: white;
         text-align: left; }
+        @media (max-width: 700px) {
+          .recommand .recommand__info .recommand__malade p {
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            margin: auto; } }
+        @media (max-width: 375px) {
+          .recommand .recommand__info .recommand__malade p {
+            font-size: 10px; } }
     .recommand .recommand__info .recommand__appel {
       width: 40%;
       margin: auto; }
+      @media (max-width: 700px) {
+        .recommand .recommand__info .recommand__appel {
+          width: 100%;
+          text-align: center; } }
       .recommand .recommand__info .recommand__appel h5 {
         color: #F4CF1B;
         font-size: 30px; }
+        @media (max-width: 375px) {
+          .recommand .recommand__info .recommand__appel h5 {
+            font-size: 16px; } }
       .recommand .recommand__info .recommand__appel p {
         width: 60%;
         font-size: 30px;
@@ -143,11 +232,23 @@ body {
         border-radius: 5px;
         background: #F4CF1B;
         color: #1078AD; }
+        @media (max-width: 700px) {
+          .recommand .recommand__info .recommand__appel p {
+            padding: 10px 0 0 0; } }
+        @media (max-width: 375px) {
+          .recommand .recommand__info .recommand__appel p {
+            font-size: 14px; } }
       .recommand .recommand__info .recommand__appel a {
         color: white;
         font-size: 25px;
         padding: 25px 0 0 0;
         border-bottom: 1px solid #F4CF1B; }
+        @media (max-width: 700px) {
+          .recommand .recommand__info .recommand__appel a {
+            padding: 5px 0 0px 0; } }
+        @media (max-width: 375px) {
+          .recommand .recommand__info .recommand__appel a {
+            font-size: 14px; } }
   .recommand .recommand__test {
     width: 100%;
     text-align: center;
@@ -155,6 +256,9 @@ body {
     background: #96C5DC; }
     .recommand .recommand__test h1 {
       color: #1078AD; }
+      @media (max-width: 375px) {
+        .recommand .recommand__test h1 {
+          font-size: 16px; } }
     .recommand .recommand__test img {
       padding-bottom: 30px; }
     .recommand .recommand__test a {
@@ -164,6 +268,14 @@ body {
       border: 0.5px solid black;
       background: #1078AD;
       padding: 6px 150px; }
+      @media (max-width: 700px) {
+        .recommand .recommand__test a {
+          width: 50%;
+          margin: auto;
+          padding: 6px 50px; } }
+      @media (max-width: 375px) {
+        .recommand .recommand__test a {
+          font-size: 14px; } }
   .recommand__information {
     display: flex;
     justify-content: space-between;
@@ -196,8 +308,18 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto; }
+    @media (max-width: 700px) {
+      .footer__info {
+        flex-wrap: wrap; } }
     .footer__info .footer__menu {
       width: 20%; }
+      @media (max-width: 700px) {
+        .footer__info .footer__menu {
+          width: 40%; } }
+      @media (max-width: 700px) {
+        .footer__info .footer__menu ul {
+          width: 100%;
+          margin: auto; } }
       .footer__info .footer__menu ul li {
         padding: 15px; }
         .footer__info .footer__menu ul li a.active {
@@ -206,6 +328,12 @@ body {
           padding: 8px;
           font-size: 22px;
           color: black; }
+          @media (max-width: 700px) {
+            .footer__info .footer__menu ul li a {
+              font-size: 18px; } }
+          @media (max-width: 375px) {
+            .footer__info .footer__menu ul li a {
+              font-size: 14px; } }
         .footer__info .footer__menu ul li .arabic {
           padding: 0px 15px;
           border: 1.5px solid rgba(0, 0, 0, 0.4);
@@ -215,17 +343,36 @@ body {
             font-size: 20px; }
     .footer__info .footer__contact {
       width: 25%; }
+      @media (max-width: 700px) {
+        .footer__info .footer__contact {
+          width: 40%; } }
       .footer__info .footer__contact h3 {
         color: #1078AD; }
+        @media (max-width: 375px) {
+          .footer__info .footer__contact h3 {
+            font-size: 14px; } }
+      @media (max-width: 375px) {
+        .footer__info .footer__contact p {
+          font-size: 10px; } }
       .footer__info .footer__contact--num {
         color: #369D53;
         font-size: 24px; }
+        @media (max-width: 700px) {
+          .footer__info .footer__contact--num {
+            font-size: 14px; } }
     .footer__info .footer__text {
       width: 45%;
       text-align: left;
       padding-top: 7%; }
+      @media (max-width: 700px) {
+        .footer__info .footer__text {
+          width: 80%;
+          margin: auto; } }
       .footer__info .footer__text p {
         color: #7F7F7F; }
+        @media (max-width: 375px) {
+          .footer__info .footer__text p {
+            font-size: 14px; } }
   .footer__copy {
     width: 100%;
     height: 20px;
