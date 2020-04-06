@@ -1,0 +1,9 @@
+$firstColor:#1078AD;
+$goldColor:#F4CF1B;
+$whiteColor:white;
+$blackColor:black;
+$sizeFont: 30px;
+@mixin flexBox {
+    display: flex;
+    justify-content: space-between;
+}

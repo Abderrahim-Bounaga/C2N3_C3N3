@@ -11,8 +11,7 @@ body{
     width: 100%;
     .header__menu{
         background: url(../png/menu.png) no-repeat;
-        display: flex;
-        justify-content: space-between;
+        @include flexBox;
         img{
             width: 50px;
             margin-top: 5px;
@@ -26,22 +25,22 @@ body{
                 padding: 5px;
                 a.active
                     {
-                        color: #1078AD;
+                        color: $firstColor;
                     }
                 a{
                     padding: 8px;
                     font-size: 22px;
-                    color: black;
+                    color: $blackColor;
                     &:focus {
-                        color: #1078AD;
+                        color: $firstColor;
                     }
                 }
                 .arabic{
                     padding: 0px 15px;
-                    border: 1.5px solid rgba($color: #000000, $alpha: .4);
+                    border: 1.5px solid rgba($color: $blackColor, $alpha: .4);
                     border-radius: 5px;
                     i{
-                        color: gold;
+                        color: $goldColor;
                         font-size: 20px;
                     }
                 }
@@ -51,12 +50,12 @@ body{
     .header__info{
         margin-top: -30px;
         text-align: center;
-        background: #F4CF1B;
+        background: $goldColor;
         h3{
             padding-top: 20px;
         }
         p{
-            color: #1078AD;
+            color: $firstColor;
             line-height: 30px;
         }
     }
@@ -74,7 +73,7 @@ body{
                 width: 10%;
             }
             p{
-                font-size: 30px;
+                font-size: $sizeFont;
                 width: 80%;
                 margin: 0 auto;
                 line-height: 45px;
@@ -83,10 +82,10 @@ body{
             }
             a{
                 width: 100%;
-                color: white;
-                font-size: 32px;
-                border: .5px solid black;
-                background: #1078AD;
+                color: $whiteColor;
+                font-size: $sizeFont;
+                border: .5px solid $blackColor;
+                background: $firstColor;
                 padding: 6px 150px;
             }
         }

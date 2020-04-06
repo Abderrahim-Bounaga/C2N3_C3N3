@@ -1,7 +1,7 @@
 .recommand{
     text-align: center;
     width: 100%;
-    background: #1078AD;
+    background: $firstColor;
     h1{
         padding-top: 30px;
         font-size: 31px;
@@ -9,8 +9,7 @@
     }
     .recommand__info{
         width: 95%;
-        display: flex;
-        justify-content: space-between;
+        @include flexBox;
         margin: 0 auto;
         .recommand__malade{
             width: 60%;
@@ -18,12 +17,12 @@
             
             h5{
                 text-align: left;
-                color: black;
+                color: $blackColor;
                 font-size: 30px;
             }
             p{
                 font-size: 26px;
-                color: white;
+                color: $whiteColor;
                 text-align: left;
             }
         }
@@ -31,24 +30,24 @@
             width: 40%;
             margin: auto;
             h5{
-                color: #F4CF1B;
+                color: $goldColor;
                 font-size: 30px;
             }
             p{
                 width: 60%;
                 font-size: 30px;
-                border: 1px solid #F4CF1B;
+                border: 1px solid $goldColor;
                 margin: 0 auto;
                 padding: 10px 0px;
                 border-radius: 5px;
-                background: #F4CF1B;
-                color: #1078AD;
+                background: $goldColor;
+                color: $firstColor;
             }
             a{
-                color: white;
+                color: $whiteColor;
                 font-size: 25px;
                 padding: 25px 0 0 0;
-                border-bottom: 1px solid #F4CF1B;
+                border-bottom: 1px solid $goldColor;
             }
         }
     }
@@ -58,30 +57,29 @@
         padding: 20px 0;
         background: #96C5DC;
         h1{
-            color: #1078AD;
+            color: $firstColor;
         }
         img{
             padding-bottom: 30px;
         }
         a{
             width: 100%;
-            color: white;
+            color: $whiteColor;
             font-size: 32px;
-            border: .5px solid black;
-            background: #1078AD;
+            border: .5px solid $blackColor;
+            background: $firstColor;
             padding: 6px 150px;
         }
     }
     &__information{
-        display: flex;
-        justify-content: space-around;
+        @include flexBox;
         text-align: center;
         background: #96C5DC;
         padding: 20px 0;
         &--info{
             width: 20%;
             h1{
-                color: #1078AD;
+                color: $firstColor;
             }
             p{
                 color: #1A519E;
@@ -90,11 +88,11 @@
         a{
             width: 20%;
             margin-top: 7%;
-            color: white;
+            color: $whiteColor;
             font-size: 20px;
-            border: .5px solid black;
+            border: .5px solid $blackColor;
             border-radius: 5px;
-            background: #1078AD;
+            background: $firstColor;
             height: 40px;
             padding: 1px 10px 3PX 10px;
         }
