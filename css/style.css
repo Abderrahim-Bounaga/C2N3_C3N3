@@ -141,21 +141,64 @@ body {
       width: 100%;
       line-height: 30px;
       font-size: 14px; }
-      .symptons__info .symptons__icon .symptons__img h4 {
-        padding-top: 25px;
-        width: 60%;
-        margin: 0 auto;
-        font-size: 23px; }
+      .symptons__info .symptons__icon .symptons__img {
+        padding: 20px 0; }
         @media (max-width: 375px) {
-          .symptons__info .symptons__icon .symptons__img h4 {
-            font-size: 12px; } }
-      .symptons__info .symptons__icon .symptons__img .font {
-        font-size: 16px; }
-      .symptons__info .symptons__icon .symptons__img .house {
-        width: 100%; }
+          .symptons__info .symptons__icon .symptons__img--wor img {
+            height: 80PX; } }
+        @media (max-width: 375px) {
+          .symptons__info .symptons__icon .symptons__img img {
+            height: 100PX; } }
+        .symptons__info .symptons__icon .symptons__img h4 {
+          padding-top: 25px;
+          width: 60%;
+          margin: 0 auto;
+          font-size: 23px; }
+          @media (max-width: 700px) {
+            .symptons__info .symptons__icon .symptons__img h4 {
+              font-size: 18px; } }
+          @media (max-width: 375px) {
+            .symptons__info .symptons__icon .symptons__img h4 {
+              font-size: 12px; } }
+        .symptons__info .symptons__icon .symptons__img .font {
+          font-size: 16px; }
+          @media (max-width: 375px) {
+            .symptons__info .symptons__icon .symptons__img .font {
+              font-size: 12px; } }
+  .symptons__house {
+    width: 40%;
+    margin: auto; }
+    @media (max-width: 700px) {
+      .symptons__house {
+        width: 70%;
+        margin-top: 20px; } }
+    @media (max-width: 375px) {
+      .symptons__house img {
+        height: 80PX; } }
+    @media (max-width: 375px) {
+      .symptons__house h4 {
+        font-size: 12px; } }
 
 .symp {
-  width: 80%; }
+  width: 100%; }
+  @media (max-width: 700px) {
+    .symp {
+      flex-wrap: wrap;
+      width: 90%; } }
+  @media (max-width: 375px) {
+    .symp {
+      width: 100%; } }
+  @media (max-width: 700px) {
+    .symp__icone {
+      display: flex;
+      justify-content: space-between;
+      margin: auto; } }
+  @media (max-width: 375px) {
+    .symp__icone .symptons__img {
+      width: 50%; } }
+  @media (max-width: 375px) {
+    .symp__icone .symptons__img img {
+      height: 70PX; } }
 
 .recommand {
   text-align: center;
@@ -282,8 +325,18 @@ body {
     text-align: center;
     background: #96C5DC;
     padding: 20px 0; }
+    @media (max-width: 700px) {
+      .recommand__information {
+        flex-direction: column;
+        margin: auto;
+        line-height: 40px; } }
     .recommand__information--info {
       width: 20%; }
+      @media (max-width: 700px) {
+        .recommand__information--info {
+          text-align: center;
+          width: 80%;
+          margin: auto; } }
       .recommand__information--info h1 {
         color: #1078AD; }
       .recommand__information--info p {
@@ -298,6 +351,14 @@ body {
       background: #1078AD;
       height: 40px;
       padding: 1px 10px 3PX 10px; }
+      @media (max-width: 700px) {
+        .recommand__information a {
+          width: 50%;
+          margin: 10px auto;
+          justify-content: space-between; } }
+      @media (max-width: 375px) {
+        .recommand__information a {
+          font-size: 14px; } }
 
 .footer {
   text-align: center;
@@ -319,9 +380,13 @@ body {
       @media (max-width: 700px) {
         .footer__info .footer__menu ul {
           width: 100%;
-          margin: auto; } }
+          margin: auto;
+          padding: 0px; } }
       .footer__info .footer__menu ul li {
         padding: 15px; }
+        @media (max-width: 700px) {
+          .footer__info .footer__menu ul li {
+            padding-left: -10px; } }
         .footer__info .footer__menu ul li a.active {
           color: #1078AD; }
         .footer__info .footer__menu ul li a {

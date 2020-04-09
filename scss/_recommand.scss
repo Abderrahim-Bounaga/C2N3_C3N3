@@ -135,8 +135,18 @@
         text-align: center;
         background: #96C5DC;
         padding: 20px 0;
+        @media (max-width:700px) {
+            flex-direction: column;
+            margin: auto;
+            line-height: 40px;
+        }
         &--info{
             width: 20%;
+            @media (max-width:700px) {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+            }
             h1{
                 color: $firstColor;
             }
@@ -154,6 +164,15 @@
             background: $firstColor;
             height: 40px;
             padding: 1px 10px 3PX 10px;
+            @media (max-width:700px) {
+               width: 50%;
+               margin:10px auto;
+               justify-content: space-between;
+            }
+            @media (max-width:375px) {
+                font-size: 14px;
+               
+            }
         }
     }
 }
