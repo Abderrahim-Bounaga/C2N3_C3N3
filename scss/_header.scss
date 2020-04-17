@@ -2,6 +2,14 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'cairo', sans-serif ;
+    
+}
+html{
+    :lang(fr) [data-fr] { display: block; }
+    :lang(fr) [data-ar] { display: none; }
+
+    :lang(ar) [data-ar] { display: block;  direction: rtl;  }
+    :lang(ar) [data-fr] { display: none; }
 }
 body{
     margin: 0;
@@ -48,8 +56,25 @@ body{
                         color: $firstColor;
                     }
                 }
+                button{
+                    padding: 8px;
+                    font-size: 22px;
+                    color: $blackColor;
+                    background-color: rgba(255, 255, 255, 0);
+                    @media (max-width:700px) {
+                        font-size: 14px;
+                    }
+                    &:focus {
+                        color: $firstColor;
+                    }
+
+                }
                 .arabic{
                     @include button;
+                    @media (max-width:375px) {
+                        font-size: 10px;
+                    }
+
                 }
             }
         }
@@ -81,6 +106,7 @@ body{
         }
         img{
             width: 50%;
+            margin-top: 50px;
             @media (max-width:700px) {
                 width: 80%;
                 margin: auto;
@@ -114,12 +140,13 @@ body{
                 }
             }
             a{
-                width: 100%;
+                width: 80%;
                 color: $whiteColor;
                 font-size: $sizeFont;
+                margin: auto;
                 border: .5px solid $blackColor;
                 background: $firstColor;
-                padding: 6px 150px;
+                padding: 6px 10px;
                 @media (max-width:700px) {
                     width: 50%;
                     margin: auto;
@@ -132,4 +159,17 @@ body{
             }
         }
     }
+}
+.data-fr{
+    display: block;
+}
+.data-ar{
+    display: none;
+}
+
+.switsh:checked ~ .data-fr{
+    display: none;
+}
+.switsh:checked ~ .data-ar{
+    display: block;
 }
