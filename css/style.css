@@ -241,9 +241,10 @@ body {
       border-radius: 50%;
       left: -14px;
       top: 10.5px;
-      opacity: 0; }
+      opacity: 1;
+      display: none; }
     .question .radio_G .option input:checked ~ label::before {
-      opacity: 1; }
+      display: block; }
   .question__info {
     width: 85%;
     margin: auto;
@@ -263,7 +264,7 @@ body {
     width: 80%;
     margin: auto;
     text-align: center; }
-    .question__button a {
+    .question__button button {
       width: 30%;
       margin: 30px;
       margin-right: auto;
@@ -274,12 +275,149 @@ body {
       background: #1078AD;
       padding: 6px 10px; }
       @media (max-width: 700px) {
-        .question__button a {
+        .question__button button {
           width: 50%;
           margin: auto;
           padding: 6px 50px; } }
       @media (max-width: 375px) {
-        .question__button a {
+        .question__button button {
+          font-size: 14px; } }
+
+.question3 {
+  width: 100%;
+  display: none; }
+  .question3__ques {
+    text-align: left;
+    color: #787878;
+    width: 70%;
+    margin: auto; }
+  .question3 .radiooo {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    .question3 .radiooo .radio_D {
+      width: 100%;
+      margin: auto;
+      text-align: left;
+      padding: 30px 0; }
+      .question3 .radiooo .radio_D .option1 {
+        position: relative; }
+        .question3 .radiooo .radio_D .option1 input {
+          display: none; }
+        .question3 .radiooo .radio_D .option1 label {
+          font-size: 20px;
+          cursor: pointer;
+          color: #1078AD;
+          margin-left: 20px;
+          padding: 10px 0; }
+      .question3 .radiooo .radio_D .option1 label::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        border: 4px solid #1078ad;
+        border-radius: 50%;
+        left: -22px;
+        top: 2px; }
+      .question3 .radiooo .radio_D .option1 label::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: gold;
+        border-radius: 50%;
+        left: -14px;
+        top: 10.5px;
+        opacity: 0; }
+      .question3 .radiooo .radio_D .option1 input:checked ~ label::before {
+        opacity: 1; }
+  .question3__info {
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    background: #F4CF1B; }
+    .question3__info h5 {
+      font-size: 20px;
+      width: 80%;
+      margin: auto;
+      padding-top: 40px; }
+    .question3__info p {
+      font-size: 20px;
+      width: 80%;
+      margin: auto;
+      padding-bottom: 40px; }
+  .question3__button {
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+    .question3__button button {
+      width: 30%;
+      margin: 30px;
+      margin-right: auto;
+      color: white;
+      font-size: 32px;
+      border: 0.5px solid black;
+      border-radius: 5px;
+      background: #1078AD;
+      padding: 6px 10px; }
+      @media (max-width: 700px) {
+        .question3__button button {
+          width: 50%;
+          margin: auto;
+          padding: 6px 50px; } }
+      @media (max-width: 375px) {
+        .question3__button button {
+          font-size: 14px; } }
+
+.question2 {
+  width: 100%;
+  display: none; }
+  .question2__ques {
+    text-align: left;
+    color: #787878;
+    width: 70%;
+    margin: auto; }
+  .question2 .radio_G {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding: 30px 0; }
+    .question2 .radio_G .option {
+      position: relative;
+      display: flex; }
+      .question2 .radio_G .option input {
+        border: 2px solid #1078AD;
+        width: 40%;
+        height: 40px; }
+      .question2 .radio_G .option label {
+        font-size: 24px;
+        color: #1078AD;
+        margin-left: 20px;
+        padding: 5px 10px; }
+  .question2__button {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; }
+    .question2__button button {
+      width: 30%;
+      margin: 30px;
+      margin-right: auto;
+      color: white;
+      font-size: 32px;
+      border: 0.5px solid black;
+      border-radius: 5px;
+      background: #1078AD;
+      padding: 6px 10px; }
+      @media (max-width: 700px) {
+        .question2__button button {
+          width: 50%;
+          margin: auto;
+          padding: 6px 50px; } }
+      @media (max-width: 375px) {
+        .question2__button button {
           font-size: 14px; } }
 
 .symptons {

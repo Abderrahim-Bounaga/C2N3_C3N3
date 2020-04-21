@@ -100,12 +100,13 @@
             border-radius: 50%;
             left: -14px;
             top: 10.5px;
-            opacity: 0;
+            opacity: 1;
+            display: none;
     
         }
     
         .option input:checked~label::before {
-            opacity: 1;
+            display: block;
     
         }
     }
@@ -132,7 +133,7 @@
         width: 80%;
         margin: auto;
         text-align: center;
-        a{
+        button{
             width: 30%;
             margin:30px;
             margin-right: auto;
@@ -152,5 +153,188 @@
             }
         }
     }
+    
+}
+.question3{
+    width: 100%;
+    display: none;
+    &__ques{
+        text-align: left;
+        color: #787878;
+        width: 70%;
+        margin: auto;
+    }
+    .radiooo{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .radio_D {
+            width: 100%;
+            margin: auto;
+            text-align: left;
+            padding: 30px 0;
+        
+            .option1 {
+                position: relative;
+        
+                input {
+                    display: none;
+                }
+        
+                label {
+                    font-size: 20px;
+                    cursor: pointer;
+                    color: $firstColor;
+                    margin-left: 20px;
+                    padding: 10px 0;
+                }
+            }
+        
+            .option1 label::after {
+                position: absolute;
+                content: "";
+                width: 25px;
+                height: 25px;
+                border: 4px solid #1078ad;
+                border-radius: 50%;
+                left: -22px;
+                top: 2px;
+            }
+        
+            .option1 label::before {
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-color: gold;
+                border-radius: 50%;
+                left: -14px;
+                top: 10.5px;
+                opacity: 0;
+        
+            }
+        
+            .option1 input:checked~label::before{
+                opacity: 1;
+        
+            }
+        }
+    }
+   
+
+    &__info{
+        width: 85%;
+        margin: auto;
+        text-align: left;
+        background: $goldColor;
+        h5{
+            font-size: 20px;
+            width: 80%;
+            margin: auto;
+            padding-top: 40px;
+        }
+        p{
+            font-size: 20px;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+    }
+    &__button{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        button{
+            width: 30%;
+            margin:30px;
+            margin-right: auto;
+            color: $whiteColor;
+            font-size: 32px;
+            border: .5px solid $blackColor;
+            border-radius: 5px;
+            background: $firstColor;
+            padding: 6px 10px;
+            @media (max-width:700px) {
+                width: 50%;
+                margin: auto;
+                padding: 6px 50px;
+            }
+            @media (max-width:375px) {
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+
+.question2{
+    width: 100%;
+    display: none;
+    &__ques{
+        text-align: left;
+        color: #787878;
+        width: 70%;
+        margin: auto;
+    }
+    .radio_G {
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        padding: 30px 0;
+    
+        .option {
+            position: relative;
+            display: flex;
+    
+            input {
+                border: 2px solid $firstColor;
+                width: 40%;
+                height: 40px;
+
+                
+            }
+    
+            label {
+                font-size: 24px;
+                color: $firstColor;
+                margin-left: 20px;
+                padding: 5px 10px;
+            }
+        }
+    
+        
+    }
+
+   
+    &__button{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        button{
+            width: 30%;
+            margin:30px;
+            margin-right: auto;
+            color: $whiteColor;
+            font-size: 32px;
+            border: .5px solid $blackColor;
+            border-radius: 5px;
+            background: $firstColor;
+            padding: 6px 10px;
+            @media (max-width:700px) {
+                width: 50%;
+                margin: auto;
+                padding: 6px 50px;
+            }
+            @media (max-width:375px) {
+                font-size: 14px;
+            }
+        }
+        
+        
+    }
+    
     
 }
