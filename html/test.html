@@ -48,35 +48,29 @@
         </div>
         <div class="test__button">
            
-                <button class="click" data-fr>Demarer le test</button>
-                <button class="click1" data-ar>نبداو الاختبار</button>
+                <button onclick="quesClick()" id="oneClick" class="click" data-fr>Demarer le test</button>
             
         </div>
     </section>
     <section class="question">
         <div></div>
         <div></div>
-        <div class="question__ques">
-            <h2 class="changeee" data-fr>Pensez-vous avoir ou avoir eu de la fièvre 
-                ces derniers <br>jours (frissons, sueurs) ? </h2>
-            <h2 data-ar>واش كانت فيك السخانة في 10 ايام لي فاتت<br>
-                ( تبوريشة ، عرقتي ) ؟
-                </h2>
+        <div class="createElement">
+           <h2 class="change">text</h2>
+           <div class="form">
+            
+           </div>
+            
         </div>
-        <div class="radio_G">
-            <div class="option">
-                <input type="radio" id="check1" name="check" />
-                <label for="check1" data-fr> OUI</label>
-                <label for="check1" data-ar> نعم</label>
+        <div class="question__buttton">
+            <div class="question__button">
+                <button  class="click2" data-fr>question suivante</button>
             </div>
-            <br>
-            <div class="option">
-                <input type="radio" id="check2" name="check" />
-                <label for="check2" data-fr> NON</label>
-                <label for="check2" data-ar> لا</label>
-
+            <div class="question__button2">
+                <button onclick="" class="click3" data-fr>question président</button>
             </div>
         </div>
+       
         <div class="question__info">
             <h5 data-fr>Anti-inflammatoires non stéroïdiens</h5>
             <p data-fr>La prise d'anti-inflammatoires (ibuprofène, cortisone ...) <br>
@@ -91,83 +85,20 @@
                 و إلى كنتي تتاخد الادوية المضادة للإلتها  <br>
                 بات ولا عندك الشك ضروري تشوف الطبيب ديالك  </p>
         </div>
-        <div class="question__button">
-            <button class="click2" data-fr>question suivante</button>
-            <button class="click-2" data-ar> دوز السؤال الاخر</button>
-        </div>
+        
     </section>
-    <section class="question3">
-        <div></div>
-        <div></div>
-        <div class="question3__ques">
-            <h2 data-fr>Pensez-vous avoir ou avoir eu de la fièvre 
-                ces derniers <br>jours (frissons, sueurs) ? </h2>
-            <h2 data-ar>واش كانت فيك السخانة في 10 ايام لي فاتت<br>
-                ( تبوريشة ، عرقتي ) ؟
-                </h2>
-        </div>
-        <div class="radiooo">
-            <div class="radio_D">
-                <div class="option1">
-                    <input type="radio" id="check3" name="check" />
-                    <label for="check3" data-fr> OUI</label>
-                    <label for="check3" data-ar> نعم</label>
-                </div>
-                <br>
-                <div class="option1">
-                    <input type="radio" id="check4" name="check" />
-                    <label for="check4" data-fr> NON</label>
-                    <label for="check4" data-ar> لا</label>
-
-                </div>
-            </div>
-            <div class="radio_D">
-                <div class="option1">
-                    <input type="radio" id="check5" name="check" />
-                    <label for="check5" data-fr> OUI</label>
-                    <label for="check5" data-ar> نعم</label>
-                </div>
-                <br>
-                <div class="option1">
-                    <input type="radio" id="check6" name="check" />
-                    <label for="check6" data-fr> NON</label>
-                    <label for="check6" data-ar> لا</label>
-
-                </div>
-            </div>
-        </div>
-        <div class="question3__info">
-            <h5 data-fr>Anti-inflammatoires non stéroïdiens</h5>
-            <p data-fr>La prise d'anti-inflammatoires (ibuprofène, cortisone ...) <br>
-                pourrait être un facteur d'aggravation de l’infection. <br>
-                En cas de fièvre,  prenez du paracétamol. <br>
-                Cette remarque concerte les traitements par gélules ou comprimés et ne concerne pas les formes inhalées. <br>
-                Si vous êtes déjà sous traitement, n'arrêtez pas ce traitement, <br>
-                demandez l'avis de votre médecin ou de votre pharmacien. </p>
-            <h5 data-ar>الأدوية المضادة للالتهابات</h5>
-            <p data-ar>الأدوية المضادة للالتهابات (الإيبوبروفين والكورتيزون ...)<br>
-                تقد تزيد من الحالة ديال العدوى، إلا فيك السخانة خود الباراسيتامول،<br>
-                و إلى كنتي تتاخد الادوية المضادة للإلتها  <br>
-                بات ولا عندك الشك ضروري تشوف الطبيب ديالك  </p>
-        </div>
-        <div class="question3__button">
-            <button class="click2" data-fr>question suivante</button>
-            <button class="click-2" data-ar> دوز السؤال الاخر</button>
-        </div>
-    </section>
+    
    
-    <section class="question2">
+    <!-- <section class="question2">
         <div></div>
         <div></div>
         <div class="question2__ques">
-            <h2 data-fr>Ces dernières 48 heures, quelle a été <br>
-                 votre température la plus élevée ?
-            </h2>
+            <h2 class="changeee1" data-fr>... </h2>
             <h2 data-ar>شحال درجة الحرارة عندك ؟
                 </h2>
         </div>
-        <div class="radio_G">
-            <div class="option">
+        <div class="radio_2">
+            <div class="option2">
                 <input id="step_fever_details" class="input-text " type="number" name="step_value" aria-describedby="text-suffix" 
                 title="Ces dernières 48 heures, quelle a été votre température la plus élevée ?" 
                 value="" min="34" max="42" step="0.1" placeholder="37,0" required="">
@@ -175,19 +106,99 @@
                 <label for="check1" data-ar> درجة</label>
             </div>
             <br>
-            
         </div>
        
         <div class="question2__button">
-            <button class="click-2" href="" data-fr>question suivante</button>
+            <button class="click2-2" href="" data-fr>question suivante</button>
             <button class="click-2" href="" data-ar> دوز السؤال الاخر</button>
             <button class="click1-2" href="" data-fr>question d'avant</button>
             <button class="click1-2" href="" data-ar>  السؤال لقبل</button>
         </div>
-        <div class="question2__button2">
-            
+        
+    </section>
+    <section class="question3">
+        <div></div>
+        <div></div>
+        <div class="question3__ques">
+            <h2 class="changeee2" data-fr> </h2>
+            <h2 data-ar>واش كانت فيك السخانة في 10 ايام لي فاتت<br>
+                ( تبوريشة ، عرقتي ) ؟
+                </h2>
+        </div>
+        <div class="radiooo">
+            <div class="radio_D">
+                <div class="option3">
+                    <input type="radio" id="check3" name="check" />
+                    <label for="check3" data-fr> OUI</label>
+                    <label for="check3" data-ar> نعم</label>
+                </div>
+                <br>
+                <div class="option3">
+                    <input type="radio" id="check4" name="check" />
+                    <label for="check4" data-fr> NON</label>
+                    <label for="check4" data-ar> لا</label>
+
+                </div>
+            </div>
+            <div class="radio_D">
+                <div class="option3">
+                    <input type="radio" id="check5" name="check" />
+                    <label for="check5" data-fr> OUI</label>
+                    <label for="check5" data-ar> نعم</label>
+                </div>
+                <br>
+                <div class="option3">
+                    <input type="radio" id="check6" name="check" />
+                    <label for="check6" data-fr> NON</label>
+                    <label for="check6" data-ar> لا</label>
+
+                </div>
+            </div>
+        </div>
+        <div class="question3__button">
+            <button class="click2" data-fr>question suivante</button>
+            <button class="click-2" data-ar> دوز السؤال الاخر</button>
+            <button class="click1-2" href="" data-fr>question d'avant</button>
+            <button class="click1-2" href="" data-ar>  السؤال لقبل</button>
         </div>
     </section>
+    <section class="question4">
+        <div></div>
+        <div></div>
+        <div class="question4__ques">
+            <h2 class="changeee3" data-fr> </h2>
+            <h2 data-ar>واش كانت فيك السخانة في 10 ايام لي فاتت<br>
+                ( تبوريشة ، عرقتي ) ؟
+                </h2>
+        </div>
+        <div class="radio_4">
+            <div class="option4">
+                <input type="radio" id="check10" name="check" />
+                <label for="check10" data-fr> OUI</label>
+                <label for="check10" data-ar> نعم</label>
+            </div>
+            
+            <div class="option4">
+                <input type="radio" id="check20" name="check" />
+                <label for="check20" data-fr> NON</label>
+                <label for="check20" data-ar> لا</label>
+
+            </div>
+            <div class="option4">
+                <input type="radio" id="check21" name="check" />
+                <label for="check21" data-fr> NON</label>
+                <label for="check21" data-ar> لا</label>
+
+            </div>
+        </div>
+
+        <div class="question4__button">
+            <button class="click2" data-fr>question suivante</button>
+            <button class="click-2" data-ar> دوز السؤال الاخر</button>
+            <button class="click1-2" href="" data-fr>question d'avant</button>
+            <button class="click1-2" href="" data-ar>  السؤال لقبل</button>
+        </div>
+    </section> -->
     <section class="recommand">
         <h1 data-fr>Recommandations officielles</h1>
         <h1 data-ar>التوصيات الرسمية</h1>
@@ -267,6 +278,7 @@
         if(lang == 'ar') $('html').attr('lang','fr');
        
       });
+      
         </script>
         <script src="../js/script.js"></script>
 </body>
