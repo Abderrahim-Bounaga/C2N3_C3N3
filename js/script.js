@@ -524,6 +524,11 @@ button3.addEventListener('click' , () => {
         button3.style.display= "block";
         // button4.style.display= "none";
     }
+    if (counter == 3 && values[1] == "non"  ) {
+            
+        values.pop();
+        counter -=1;
+    }
     values.pop();
 
     changeeQuestions(counter);
@@ -588,7 +593,7 @@ button1.addEventListener('click' , () => {
     //     button1.style.display= "none";
     //     button4.style.display= "block";
     // };
-    if(counter === 23){
+    if(counter === 24){
         button1
             .classList
             .add('result')
@@ -636,7 +641,6 @@ function updateProgress(num) {
             'eau l’application pour réévaluer vos symptômes';
     
 }
-
 
 //Patient avec fièvre, ou toux + mal de gorge, ou toux + courbatures ou fièvre + diarrhée :
 //Tout patient sans facteur pronostique : Sans facteur de gravité & 50-69 ans, ou avec au moins un facteur de gravité mineur
@@ -761,6 +765,9 @@ if ((values[1] === "non") && (values[3] === "non") && (values[4] === "non") && (
 repFin.innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
 'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
 
+}
+if(((values[1]=== "oui") && (values[2]<= 35.4))  || (values[9] === "oui") || (values[10] === "oui")){
+    repFin.innerText = 'Appelez le 141'
 }
 
 
