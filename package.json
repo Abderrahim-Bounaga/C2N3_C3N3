@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Abderrahim-Bounaga/C2N3_C3N3#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
